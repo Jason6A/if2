@@ -37,6 +37,41 @@
                 <field name="NUM">200</field>
               </block>
             </value>
+            <next>
+              <block type="controls_if" id="712" inline="false">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="713" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="714">
+                        <field name="OBJECT">RIGHTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="715">
+                        <field name="NUM">75</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="movement_right" id="733"></block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="movement_forward" id="717"></block>
+                </statement>
+                <next>
+                  <block type="robot_delay" id="734" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="735">
+                        <field name="NUM">200</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
