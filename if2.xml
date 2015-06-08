@@ -14,7 +14,7 @@
             <field name="OP">LT</field>
             <value name="A">
               <block type="math_number" id="394">
-                <field name="NUM">75</field>
+                <field name="NUM">50</field>
               </block>
             </value>
             <value name="B">
@@ -38,7 +38,7 @@
                 <field name="OP">LT</field>
                 <value name="A">
                   <block type="math_number" id="473">
-                    <field name="NUM">75</field>
+                    <field name="NUM">50</field>
                   </block>
                 </value>
                 <value name="B">
@@ -58,5 +58,8 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="549"></block>
+    </next>
   </block>
 </xml>
